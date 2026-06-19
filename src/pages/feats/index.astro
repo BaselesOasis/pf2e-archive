@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import feats from '../../data/feats.json';
+
+// Nach Kategorie gruppieren, dann nach Level, dann nach Name
+const sorted = [...feats].sort((a, b) => {
+  if (a.category !== b.category) return (a.category ?? '').localeCompare(b.category ?? '');
+  if (a.level !== b.level) return (a.level ?? 0) - (b.level ?? 0);
+  return a.name.localeCompare(b.name);
+});
+---
+
+<BaseLayout title="Feats">
+  <h1>Feats</h1>
+  <p>{feats.length} feats total</p>
+
+  <figure>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Level</th>
+          <th>Category</th>
+          <th>Traits</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sorted.map(feat => (
+          <tr>
+            <td><a href={`/feats/${feat.slug}`}>{feat.name}</a></td>
+            <td>{feat.level ?? '—'}</td>
+            <td>{feat.category ?? '—'}</td>
+            <td><small>{feat.traits.join(', ')}</small></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </figure>
+</BaseLayout>

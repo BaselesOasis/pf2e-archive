@@ -1,17 +1,22 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Home">
+  <h1>PF2e Archive</h1>
+  <p>A static reference archive for Pathfinder 2nd Edition.</p>
+
+  <section>
+    <h2>Browse</h2>
+    <ul>
+      <li><a href="/spells">Spells</a></li>
+      <li><a href="/feats">Feats</a></li>
+      <li><a href="/equipment">Equipment</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Search</h2>
+    <p><a href="/search">Search all entries →</a></p>
+  </section>
+</BaseLayout>

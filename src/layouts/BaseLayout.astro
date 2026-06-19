@@ -1,0 +1,40 @@
+---
+import '@picocss/pico/css/pico.min.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'PF2e Reference Archive' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} — PF2e Archive</title>
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/"><strong>PF2e Archive</strong></a></li>
+        </ul>
+        <ul>
+          <li><a href="/spells">Spells</a></li>
+          <li><a href="/feats">Feats</a></li>
+          <li><a href="/equipment">Equipment</a></li>
+          <li><a href="/search">Search</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <slot />
+    </main>
+  </body>
+</html>

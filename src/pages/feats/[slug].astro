@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import feats from '../../data/feats.json';
+
+export async function getStaticPaths() {
+  return feats.map(feat => ({
+    params: { slug: feat.slug },
+    props: { feat }
+  }));
+}
+
+const { feat } = Astro.props;
+---
+
+<BaseLayout title={feat.name} description={feat.description.substring(0, 160).replace(/<[^>]*>/g, '')}>
+  <article>
+    <header>
+      <h1>{feat.name}</h1>
+      <p>
+        <small>
+          {feat.rarity !== 'common' && <mark>{feat.rarity}</mark>}
+          {feat.rarity !== 'common' && ' · '}
+          {feat.category && `${feat.category} · `}
+          Level {feat.level ?? '—'}
+        </small>
+      </p>
+    </header>
+
+    <p>
+      {feat.traits.map(trait => (
+        <small><mark>{trait}</mark></small>
+      ))}
+    </p>
+
+    {feat.prerequisites && feat.prerequisites.length > 0 && (
+      <p><strong>Prerequisites:</strong> {feat.prerequisites.join(', ')}</p>
+    )}
+
+    <h2>Description</h2>
+    <div set:html={feat.description} />
+
+    {feat.publication && (
+      <footer>
+        <small>
+          Source: {feat.publication.title} ({feat.publication.license})
+        </small>
+      </footer>
+    )}
+
+    <hr />
+    <p><a href="/feats">← Back to Feats</a></p>
+  </article>
+</BaseLayout>

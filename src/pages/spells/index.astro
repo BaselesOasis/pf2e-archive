@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import spells from '../../data/spells.json';
+
+// Nach Level sortieren, dann nach Name
+const sorted = [...spells].sort((a, b) => {
+  if (a.level !== b.level) return (a.level ?? 0) - (b.level ?? 0);
+  return a.name.localeCompare(b.name);
+});
+---
+
+<BaseLayout title="Spells">
+  <h1>Spells</h1>
+  <p>{spells.length} spells total</p>
+
+  <figure>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Rank</th>
+          <th>Traits</th>
+          <th>Traditions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sorted.map(spell => (
+          <tr>
+            <td><a href={`/spells/${spell.slug}`}>{spell.name}</a></td>
+            <td>{spell.level ?? '—'}</td>
+            <td><small>{spell.traits.join(', ')}</small></td>
+            <td><small>{spell.traditions?.join(', ') ?? '—'}</small></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </figure>
+</BaseLayout>

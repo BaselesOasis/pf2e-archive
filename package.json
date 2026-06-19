@@ -7,11 +7,19 @@
   },
   "scripts": {
     "dev": "astro dev",
+    "fetch-data": "node scripts/fetch-data.mjs",
+    "prebuild": "node scripts/fetch-data.mjs",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^6.4.7"
+    "@picocss/pico": "^2.1.1",
+    "astro": "^6.4.7",
+    "astro-pagefind": "^2.0.0",
+    "pagefind": "^1.5.2"
+  },
+  "allowScripts": {
+    "esbuild@0.27.7": true
   }
 }
