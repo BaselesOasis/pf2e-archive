@@ -1,22 +1,75 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import spells from '../data/spells.json';
+import feats from '../data/feats.json';
+import equipment from '../data/equipment.json';
+import ancestries from '../data/ancestries.json';
+import classes from '../data/classes.json';
+import backgrounds from '../data/backgrounds.json';
+import conditions from '../data/conditions.json';
+
+const categories = [
+  { name: 'Spells',       href: '/spells',       count: spells.length,       desc: 'Arcane, divine, and primal magic.' },
+  { name: 'Feats',         href: '/feats',         count: feats.length,        desc: 'Ancestry, class, general, and skill feats.' },
+  { name: 'Equipment',    href: '/equipment',    count: equipment.length,    desc: 'Weapons, armor, consumables, and gear.' },
+  { name: 'Ancestries',   href: '/ancestries',   count: ancestries.length,   desc: 'Playable heritages and their traits.' },
+  { name: 'Classes',       href: '/classes',       count: classes.length,       desc: 'Character classes and their features.' },
+  { name: 'Backgrounds',  href: '/backgrounds',  count: backgrounds.length,  desc: 'Character backgrounds and origins.' },
+  { name: 'Conditions',    href: '/conditions',    count: conditions.length,    desc: 'Status effects and conditions.' },
+];
+
+const totalEntries = categories.reduce((sum, c) => sum + c.count, 0);
 ---
 
 <BaseLayout title="Home">
-  <h1>PF2e Archive</h1>
-  <p>A static reference archive for Pathfinder 2nd Edition.</p>
-
+  <!-- Hero -->
   <section>
-    <h2>Browse</h2>
-    <ul>
-      <li><a href="/spells">Spells</a></li>
-      <li><a href="/feats">Feats</a></li>
-      <li><a href="/equipment">Equipment</a></li>
-    </ul>
+    <h1>PF2e Archive</h1>
+    <p>
+      A static reference archive for Pathfinder 2nd Edition.
+      Currently indexing <strong>{totalEntries.toLocaleString()}</strong> entries across {categories.length} categories.
+    </p>
+    <a href="/search" role="button">Search the archive</a>
   </section>
 
+  <!-- Category Cards -->
   <section>
-    <h2>Search</h2>
-    <p><a href="/search">Search all entries →</a></p>
+    <h2>Browse by Category</h2>
+    <div class="grid">
+      {categories.map(category => (
+        <article>
+          <header>
+            <a href={category.href}><h3>{category.name}</h3></a>
+            <p><small>{category.count.toLocaleString()} entries</small></p>
+          </header>
+          <p>{category.desc}</p>
+          <footer>
+            <a href={category.href}>Browse {category.name} &rarr;</a>
+          </footer>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <!-- About -->
+  <section>
+    <h2>About this Archive</h2>
+    <p>
+      This is a fully static website generated from the open-source
+      <a href="https://github.com/foundryvtt/pf2e" target="_blank" rel="noopener">Foundry VTT Pathfinder 2e system</a>.
+      All data is compiled at build time and served as plain HTML.
+      The search runs entirely in your browser, powered by
+      <a href="https://pagefind.app" target="_blank" rel="noopener">Pagefind</a>.
+    </p>
+    <details>
+      <summary>Technical Details</summary>
+      <ul>
+        <li>Static site generation with <a href="https://astro.build" target="_blank" rel="noopener">Astro</a></li>
+        <li>Styling with <a href="https://picocss.com" target="_blank" rel="noopener">Pico CSS</a></li>
+        <li>Client-side search with <a href="https://pagefind.app" target="_blank" rel="noopener">Pagefind</a></li>
+        <li>Hosted on <a href="https://pages.cloudflare.com" target="_blank" rel="noopener">Cloudflare Pages</a></li>
+        <li>Data sourced from the <a href="https://github.com/foundryvtt/pf2e" target="_blank" rel="noopener">Foundry VTT pf2e repository</a></li>
+      </ul>
+    </details>
   </section>
 </BaseLayout>

@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import conditions from '../../data/conditions.json';
+
+export async function getStaticPaths() {
+  return conditions.map(condition => ({
+    params: { slug: condition.slug },
+    props: { condition }
+  }));
+}
+
+const { condition } = Astro.props;
+---
+
+<BaseLayout title={condition.name} description={condition.description.substring(0, 160).replace(/<[^>]*>/g, '')}>
+  <article>
+    <header>
+      <h1>{condition.name}</h1>
+    </header>
+
+    <table>
+      <tbody>
+        <tr><th>Group</th><td>{condition.group ?? '—'}</td></tr>
+        <tr><th>Duration</th><td>{condition.duration}</td></tr>
+      </tbody>
+    </table>
+
+    {condition.overrides.length > 0 && (
+      <p><strong>Overrides:</strong> {condition.overrides.join(', ')}</p>
+    )}
+
+    <h2>Description</h2>
+    <div set:html={condition.description} />
+
+    {condition.publication && (
+      <footer>
+        <small>Source: {condition.publication.title} ({condition.publication.license})</small>
+      </footer>
+    )}
+
+    <hr />
+    <p><a href="/conditions">← Back to Conditions</a></p>
+  </article>
+</BaseLayout>

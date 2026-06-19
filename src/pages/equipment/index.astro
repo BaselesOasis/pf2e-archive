@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import equipment from '../../data/equipment.json';
+
+const sorted = [...equipment].sort((a, b) => {
+  if (a.level !== b.level) return (a.level ?? 0) - (b.level ?? 0);
+  return a.name.localeCompare(b.name);
+});
+---
+
+<BaseLayout title="Equipment">
+  <h1>Equipment</h1>
+  <p>{equipment.length} items total</p>
+
+  <figure>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Level</th>
+          <th>Type</th>
+          <th>Price</th>
+          <th>Traits</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sorted.map(item => (
+          <tr>
+            <td><a href={`/equipment/${item.slug}`}>{item.name}</a></td>
+            <td>{item.level ?? '—'}</td>
+            <td><small>{item.subType}</small></td>
+            <td><small>{item.price}</small></td>
+            <td><small>{item.traits.join(', ')}</small></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </figure>
+</BaseLayout>

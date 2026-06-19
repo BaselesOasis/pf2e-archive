@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import conditions from '../../data/conditions.json';
+
+const sorted = [...conditions].sort((a, b) => {
+  if (a.group !== b.group) return (a.group ?? '').localeCompare(b.group ?? '');
+  return a.name.localeCompare(b.name);
+});
+---
+
+<BaseLayout title="Conditions">
+  <h1>Conditions</h1>
+  <p>{conditions.length} conditions total</p>
+
+  <figure>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Group</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sorted.map(condition => (
+          <tr>
+            <td><a href={`/conditions/${condition.slug}`}>{condition.name}</a></td>
+            <td>{condition.group ?? '—'}</td>
+            <td>{condition.duration}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </figure>
+</BaseLayout>

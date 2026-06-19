@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import classes from '../../data/classes.json';
+
+const sorted = [...classes].sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<BaseLayout title="Classes">
+  <h1>Classes</h1>
+  <p>{classes.length} classes total</p>
+
+  <figure>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>HP/Level</th>
+          <th>Key Ability</th>
+          <th>Spellcasting</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sorted.map(cls => (
+          <tr>
+            <td><a href={`/classes/${cls.slug}`}>{cls.name}</a></td>
+            <td>{cls.hp ?? '—'}</td>
+            <td>{cls.keyAbility?.map(a => a.toUpperCase()).join(', ') ?? '—'}</td>
+            <td>{cls.spellcasting > 0 ? 'Yes' : 'No'}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </figure>
+</BaseLayout>

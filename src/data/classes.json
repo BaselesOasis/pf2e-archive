@@ -14,6 +14,39 @@
       "remaster": true,
       "title": "Pathfinder Player Core 2"
     },
+    "hp": 8,
+    "keyAbility": [
+      "int"
+    ],
+    "savingThrows": {
+      "fortitude": 2,
+      "reflex": 2,
+      "will": 1
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 1,
+      "medium": 1,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 0,
+      "other": {
+        "name": "Alchemical Bombs",
+        "rank": 1
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 1,
+    "trainedSkills": {
+      "additional": 3,
+      "value": [
+        "crafting"
+      ]
+    },
+    "spellcasting": 0,
     "pack": "classes"
   },
   {
@@ -31,6 +64,40 @@
       "remaster": true,
       "title": "Pathfinder War of Immortals"
     },
+    "hp": 8,
+    "keyAbility": [
+      "wis"
+    ],
+    "savingThrows": {
+      "fortitude": 1,
+      "reflex": 1,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 1,
+      "medium": 1,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 0,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 1,
+    "trainedSkills": {
+      "additional": 2,
+      "custom": "",
+      "value": [
+        "religion"
+      ]
+    },
+    "spellcasting": 1,
     "pack": "classes"
   },
   {
@@ -48,6 +115,39 @@
       "remaster": true,
       "title": "Pathfinder Player Core 2"
     },
+    "hp": 12,
+    "keyAbility": [
+      "str"
+    ],
+    "savingThrows": {
+      "fortitude": 2,
+      "reflex": 1,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 1,
+      "medium": 1,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 1,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 2,
+    "trainedSkills": {
+      "additional": 3,
+      "value": [
+        "athletics"
+      ]
+    },
+    "spellcasting": 0,
     "pack": "classes"
   },
   {
@@ -65,6 +165,40 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "hp": 8,
+    "keyAbility": [
+      "cha"
+    ],
+    "savingThrows": {
+      "fortitude": 1,
+      "reflex": 1,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 1,
+      "medium": 0,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 1,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 2,
+    "trainedSkills": {
+      "additional": 4,
+      "value": [
+        "occultism",
+        "performance"
+      ]
+    },
+    "spellcasting": 1,
     "pack": "classes"
   },
   {
@@ -82,6 +216,40 @@
       "remaster": true,
       "title": "Pathfinder Player Core 2"
     },
+    "hp": 10,
+    "keyAbility": [
+      "dex",
+      "str"
+    ],
+    "savingThrows": {
+      "fortitude": 2,
+      "reflex": 1,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 1,
+      "light": 1,
+      "medium": 1,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 1,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 1,
+    "trainedSkills": {
+      "additional": 2,
+      "value": [
+        "religion"
+      ]
+    },
+    "spellcasting": 1,
     "pack": "classes"
   },
   {
@@ -99,6 +267,39 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "hp": 8,
+    "keyAbility": [
+      "wis"
+    ],
+    "savingThrows": {
+      "fortitude": 1,
+      "reflex": 1,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 0,
+      "medium": 0,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 0,
+      "other": {
+        "name": "Deity's favored weapon",
+        "rank": 1
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 1,
+    "trainedSkills": {
+      "additional": 2,
+      "value": [
+        "religion"
+      ]
+    },
+    "spellcasting": 1,
     "pack": "classes"
   },
   {
@@ -116,6 +317,39 @@
       "remaster": true,
       "title": "Pathfinder Battlecry!"
     },
+    "hp": 8,
+    "keyAbility": [
+      "int"
+    ],
+    "savingThrows": {
+      "fortitude": 1,
+      "reflex": 2,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 1,
+      "light": 1,
+      "medium": 1,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 1,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 2,
+    "trainedSkills": {
+      "additional": 2,
+      "value": [
+        "society"
+      ]
+    },
+    "spellcasting": 0,
     "pack": "classes"
   },
   {
@@ -133,6 +367,39 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "hp": 8,
+    "keyAbility": [
+      "wis"
+    ],
+    "savingThrows": {
+      "fortitude": 1,
+      "reflex": 1,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 1,
+      "medium": 1,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 0,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 1,
+    "trainedSkills": {
+      "additional": 2,
+      "value": [
+        "nature"
+      ]
+    },
+    "spellcasting": 1,
     "pack": "classes"
   },
   {
@@ -150,6 +417,41 @@
       "remaster": true,
       "title": "Pathfinder War of Immortals"
     },
+    "hp": 10,
+    "keyAbility": [
+      "dex",
+      "str"
+    ],
+    "savingThrows": {
+      "fortitude": 2,
+      "reflex": 1,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 1,
+      "medium": 1,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 1,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 1,
+    "trainedSkills": {
+      "additional": 3,
+      "custom": "",
+      "value": [
+        "religion"
+      ]
+    },
+    "spellcasting": 0,
     "pack": "classes"
   },
   {
@@ -167,6 +469,38 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "hp": 10,
+    "keyAbility": [
+      "dex",
+      "str"
+    ],
+    "savingThrows": {
+      "fortitude": 2,
+      "reflex": 2,
+      "will": 1
+    },
+    "defenses": {
+      "heavy": 1,
+      "light": 1,
+      "medium": 1,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 1,
+      "martial": 2,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 2,
+      "unarmed": 2
+    },
+    "perception": 2,
+    "trainedSkills": {
+      "additional": 3,
+      "value": []
+    },
+    "spellcasting": 0,
     "pack": "classes"
   },
   {
@@ -184,6 +518,39 @@
       "remaster": true,
       "title": "Pathfinder Battlecry!"
     },
+    "hp": 12,
+    "keyAbility": [
+      "str"
+    ],
+    "savingThrows": {
+      "fortitude": 2,
+      "reflex": 1,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 1,
+      "light": 1,
+      "medium": 1,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 1,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 1,
+    "trainedSkills": {
+      "additional": 3,
+      "value": [
+        "athletics"
+      ]
+    },
+    "spellcasting": 0,
     "pack": "classes"
   },
   {
@@ -201,6 +568,37 @@
       "remaster": true,
       "title": "Pathfinder Guns & Gears"
     },
+    "hp": 8,
+    "keyAbility": [
+      "dex"
+    ],
+    "savingThrows": {
+      "fortitude": 2,
+      "reflex": 2,
+      "will": 1
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 1,
+      "medium": 1,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 1,
+      "other": {
+        "name": "Simple Firearms, Martial Firearms",
+        "rank": 2
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 2,
+    "trainedSkills": {
+      "additional": 3,
+      "value": []
+    },
+    "spellcasting": 0,
     "pack": "classes"
   },
   {
@@ -218,6 +616,40 @@
       "remaster": true,
       "title": "Pathfinder Guns & Gears"
     },
+    "hp": 8,
+    "keyAbility": [
+      "int"
+    ],
+    "savingThrows": {
+      "fortitude": 2,
+      "reflex": 1,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 1,
+      "medium": 1,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 1,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 1,
+    "trainedSkills": {
+      "additional": 3,
+      "custom": "",
+      "value": [
+        "crafting"
+      ]
+    },
+    "spellcasting": 0,
     "pack": "classes"
   },
   {
@@ -235,6 +667,39 @@
       "remaster": true,
       "title": "Pathfinder Player Core 2"
     },
+    "hp": 8,
+    "keyAbility": [
+      "int"
+    ],
+    "savingThrows": {
+      "fortitude": 1,
+      "reflex": 2,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 1,
+      "medium": 0,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 1,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 2,
+    "trainedSkills": {
+      "additional": 4,
+      "value": [
+        "society"
+      ]
+    },
+    "spellcasting": 0,
     "pack": "classes"
   },
   {
@@ -252,6 +717,40 @@
       "remaster": true,
       "title": "Pathfinder Rage of Elements"
     },
+    "hp": 8,
+    "keyAbility": [
+      "con"
+    ],
+    "savingThrows": {
+      "fortitude": 2,
+      "reflex": 2,
+      "will": 1
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 1,
+      "medium": 0,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 0,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 1,
+    "trainedSkills": {
+      "additional": 3,
+      "custom": "",
+      "value": [
+        "nature"
+      ]
+    },
+    "spellcasting": 0,
     "pack": "classes"
   },
   {
@@ -269,6 +768,41 @@
       "remaster": false,
       "title": "Pathfinder Secrets of Magic"
     },
+    "hp": 8,
+    "keyAbility": [
+      "dex",
+      "str"
+    ],
+    "savingThrows": {
+      "fortitude": 2,
+      "reflex": 1,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 1,
+      "medium": 1,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 1,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 1,
+    "trainedSkills": {
+      "additional": 2,
+      "custom": "",
+      "value": [
+        "arcana"
+      ]
+    },
+    "spellcasting": 1,
     "pack": "classes"
   },
   {
@@ -286,6 +820,38 @@
       "remaster": true,
       "title": "Pathfinder Player Core 2"
     },
+    "hp": 10,
+    "keyAbility": [
+      "dex",
+      "str"
+    ],
+    "savingThrows": {
+      "fortitude": 2,
+      "reflex": 2,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 0,
+      "medium": 0,
+      "unarmored": 2
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 0,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 1,
+    "trainedSkills": {
+      "additional": 4,
+      "value": []
+    },
+    "spellcasting": 0,
     "pack": "classes"
   },
   {
@@ -303,6 +869,39 @@
       "remaster": true,
       "title": "Pathfinder Player Core 2"
     },
+    "hp": 8,
+    "keyAbility": [
+      "cha"
+    ],
+    "savingThrows": {
+      "fortitude": 1,
+      "reflex": 1,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 1,
+      "medium": 0,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 0,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 1,
+    "trainedSkills": {
+      "additional": 3,
+      "value": [
+        "religion"
+      ]
+    },
+    "spellcasting": 1,
     "pack": "classes"
   },
   {
@@ -320,6 +919,38 @@
       "remaster": true,
       "title": "Pathfinder Dark Archive (Remastered)"
     },
+    "hp": 6,
+    "keyAbility": [],
+    "savingThrows": {
+      "fortitude": 1,
+      "reflex": 1,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 0,
+      "medium": 0,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 0,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 1,
+    "trainedSkills": {
+      "additional": 3,
+      "custom": "",
+      "value": [
+        "occultism"
+      ]
+    },
+    "spellcasting": 1,
     "pack": "classes"
   },
   {
@@ -337,6 +968,40 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "hp": 10,
+    "keyAbility": [
+      "dex",
+      "str"
+    ],
+    "savingThrows": {
+      "fortitude": 2,
+      "reflex": 2,
+      "will": 1
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 1,
+      "medium": 1,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 1,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 2,
+    "trainedSkills": {
+      "additional": 4,
+      "value": [
+        "survival"
+      ]
+    },
+    "spellcasting": 0,
     "pack": "classes"
   },
   {
@@ -354,6 +1019,39 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "hp": 8,
+    "keyAbility": [
+      "dex"
+    ],
+    "savingThrows": {
+      "fortitude": 1,
+      "reflex": 2,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 1,
+      "medium": 0,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 1,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 2,
+    "trainedSkills": {
+      "additional": 7,
+      "value": [
+        "stealth"
+      ]
+    },
+    "spellcasting": 0,
     "pack": "classes"
   },
   {
@@ -371,6 +1069,37 @@
       "remaster": true,
       "title": "Pathfinder Player Core 2"
     },
+    "hp": 6,
+    "keyAbility": [
+      "cha"
+    ],
+    "savingThrows": {
+      "fortitude": 1,
+      "reflex": 1,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 0,
+      "medium": 0,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 0,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 1,
+    "trainedSkills": {
+      "additional": 2,
+      "value": []
+    },
+    "spellcasting": 1,
     "pack": "classes"
   },
   {
@@ -388,6 +1117,37 @@
       "remaster": false,
       "title": "Pathfinder Secrets of Magic"
     },
+    "hp": 10,
+    "keyAbility": [
+      "cha"
+    ],
+    "savingThrows": {
+      "fortitude": 2,
+      "reflex": 1,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 0,
+      "medium": 0,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 0,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 1,
+    "trainedSkills": {
+      "additional": 3,
+      "value": []
+    },
+    "spellcasting": 1,
     "pack": "classes"
   },
   {
@@ -405,6 +1165,39 @@
       "remaster": true,
       "title": "Pathfinder Player Core 2"
     },
+    "hp": 10,
+    "keyAbility": [
+      "dex"
+    ],
+    "savingThrows": {
+      "fortitude": 1,
+      "reflex": 2,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 1,
+      "medium": 0,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 1,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 2,
+    "trainedSkills": {
+      "additional": 4,
+      "value": [
+        "acrobatics"
+      ]
+    },
+    "spellcasting": 0,
     "pack": "classes"
   },
   {
@@ -422,6 +1215,43 @@
       "remaster": true,
       "title": "Pathfinder Dark Archive (Remastered)"
     },
+    "hp": 8,
+    "keyAbility": [
+      "cha"
+    ],
+    "savingThrows": {
+      "fortitude": 2,
+      "reflex": 1,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 1,
+      "medium": 1,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 1,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 2,
+    "trainedSkills": {
+      "additional": 3,
+      "custom": "Esoteric Lore",
+      "value": [
+        "arcana",
+        "nature",
+        "occultism",
+        "religion"
+      ]
+    },
+    "spellcasting": 0,
     "pack": "classes"
   },
   {
@@ -439,6 +1269,37 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "hp": 6,
+    "keyAbility": [
+      "int"
+    ],
+    "savingThrows": {
+      "fortitude": 1,
+      "reflex": 1,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 0,
+      "medium": 0,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 0,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 1,
+    "trainedSkills": {
+      "additional": 3,
+      "value": []
+    },
+    "spellcasting": 1,
     "pack": "classes"
   },
   {
@@ -456,6 +1317,39 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "hp": 6,
+    "keyAbility": [
+      "int"
+    ],
+    "savingThrows": {
+      "fortitude": 1,
+      "reflex": 1,
+      "will": 2
+    },
+    "defenses": {
+      "heavy": 0,
+      "light": 0,
+      "medium": 0,
+      "unarmored": 1
+    },
+    "attacks": {
+      "advanced": 0,
+      "martial": 0,
+      "other": {
+        "name": "",
+        "rank": 0
+      },
+      "simple": 1,
+      "unarmed": 1
+    },
+    "perception": 1,
+    "trainedSkills": {
+      "additional": 2,
+      "value": [
+        "arcana"
+      ]
+    },
+    "spellcasting": 1,
     "pack": "classes"
   }
 ]

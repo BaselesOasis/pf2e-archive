@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import backgrounds from '../../data/backgrounds.json';
+
+const sorted = [...backgrounds].sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<BaseLayout title="Backgrounds">
+  <h1>Backgrounds</h1>
+  <p>{backgrounds.length} backgrounds total</p>
+
+  <figure>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Rarity</th>
+          <th>Trained Skills</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sorted.map(bg => (
+          <tr>
+            <td><a href={`/backgrounds/${bg.slug}`}>{bg.name}</a></td>
+            <td>{bg.rarity}</td>
+            <td><small>{bg.trainedSkills?.value?.join(', ') ?? '—'}</small></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </figure>
+</BaseLayout>

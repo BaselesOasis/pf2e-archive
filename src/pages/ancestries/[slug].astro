@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ancestries from '../../data/ancestries.json';
+
+const abilityMap = {
+  str: 'Strength', dex: 'Dexterity', con: 'Constitution',
+  int: 'Intelligence', wis: 'Wisdom', cha: 'Charisma'
+};
+
+export async function getStaticPaths() {
+  return ancestries.map(ancestry => ({
+    params: { slug: ancestry.slug },
+    props: { ancestry }
+  }));
+}
+
+const { ancestry } = Astro.props;
+---
+
+<BaseLayout title={ancestry.name} description={ancestry.description.substring(0, 160).replace(/<[^>]*>/g, '')}>
+  <article>
+    <header>
+      <h1>{ancestry.name}</h1>
+      <p>
+        <small>
+          {ancestry.rarity !== 'common' && <mark>{ancestry.rarity}</mark>}
+          {ancestry.rarity !== 'common' && ' · '}
+          {ancestry.traits.join(', ')}
+        </small>
+      </p>
+    </header>
+
+    <table>
+      <tbody>
+        <tr><th>HP</th><td>{ancestry.hp ?? '—'}</td></tr>
+        <tr><th>Size</th><td>{ancestry.size ?? '—'}</td></tr>
+        <tr><th>Speed</th><td>{ancestry.speed ?? '—'} ft</td></tr>
+        <tr><th>Vision</th><td>{ancestry.vision}</td></tr>
+      </tbody>
+    </table>
+
+    {ancestry.boosts.length > 0 && (
+      <section>
+        <h2>Ability Boosts</h2>
+        <ul>
+          {ancestry.boosts.map(boost => (
+            <li>
+              <strong>Boost {boost.slot + 1}:</strong>{' '}
+              {boost.options.map(ab => abilityMap[ab] || ab).join(' or ')}
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {ancestry.flaws.length > 0 && (
+      <section>
+        <h2>Ability Flaws</h2>
+        <ul>
+          {ancestry.flaws.map(flaw => (
+            <li>
+              <strong>Flaw {flaw.slot + 1}:</strong>{' '}
+              {flaw.options.map(ab => abilityMap[ab] || ab).join(' or ')}
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {ancestry.languages.length > 0 && (
+      <section>
+        <h2>Languages</h2>
+        <p>{ancestry.languages.join(', ')}</p>
+      </section>
+    )}
+
+    {ancestry.additionalLanguages.length > 0 && (
+      <section>
+        <h2>Additional Languages</h2>
+        <p>{ancestry.additionalLanguages.join(', ')}</p>
+      </section>
+    )}
+
+    <h2>Description</h2>
+    <div set:html={ancestry.description} />
+
+    {ancestry.publication && (
+      <footer>
+        <small>Source: {ancestry.publication.title} ({ancestry.publication.license})</small>
+      </footer>
+    )}
+
+    <hr />
+    <p><a href="/ancestries">← Back to Ancestries</a></p>
+  </article>
+</BaseLayout>

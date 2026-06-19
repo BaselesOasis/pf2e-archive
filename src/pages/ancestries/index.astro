@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ancestries from '../../data/ancestries.json';
+
+const sorted = [...ancestries].sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<BaseLayout title="Ancestries">
+  <h1>Ancestries</h1>
+  <p>{ancestries.length} ancestries total</p>
+
+  <figure>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>HP</th>
+          <th>Size</th>
+          <th>Speed</th>
+          <th>Rarity</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sorted.map(ancestry => (
+          <tr>
+            <td><a href={`/ancestries/${ancestry.slug}`}>{ancestry.name}</a></td>
+            <td>{ancestry.hp ?? '—'}</td>
+            <td>{ancestry.size ?? '—'}</td>
+            <td>{ancestry.speed ?? '—'} ft</td>
+            <td>{ancestry.rarity}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </figure>
+</BaseLayout>

@@ -14,6 +14,11 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "senses",
+    "duration": "unlimited",
+    "overrides": [
+      "dazzled"
+    ],
     "pack": "conditions"
   },
   {
@@ -31,6 +36,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": null,
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -48,6 +56,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "abilities",
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -65,6 +76,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "senses",
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -82,6 +96,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": null,
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -99,6 +116,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": null,
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -116,6 +136,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core 2"
     },
+    "group": "abilities",
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -133,6 +156,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "senses",
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -150,6 +176,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "senses",
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -167,6 +196,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "death",
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -184,6 +216,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "abilities",
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -201,6 +236,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "death",
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -218,6 +256,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": null,
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -235,6 +276,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "abilities",
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -252,6 +296,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": null,
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -269,6 +316,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": null,
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -286,6 +336,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": null,
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -303,6 +356,14 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "attitudes",
+    "duration": "unlimited",
+    "overrides": [
+      "helpful",
+      "indifferent",
+      "unfriendly",
+      "hostile"
+    ],
     "pack": "conditions"
   },
   {
@@ -320,6 +381,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": null,
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -337,6 +401,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": null,
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -354,6 +421,14 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "attitudes",
+    "duration": "unlimited",
+    "overrides": [
+      "friendly",
+      "indifferent",
+      "unfriendly",
+      "hostile"
+    ],
     "pack": "conditions"
   },
   {
@@ -371,6 +446,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "detection",
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -388,6 +466,14 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "attitudes",
+    "duration": "unlimited",
+    "overrides": [
+      "helpful",
+      "friendly",
+      "indifferent",
+      "unfriendly"
+    ],
     "pack": "conditions"
   },
   {
@@ -405,6 +491,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": null,
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -422,6 +511,14 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "attitudes",
+    "duration": "unlimited",
+    "overrides": [
+      "helpful",
+      "friendly",
+      "unfriendly",
+      "hostile"
+    ],
     "pack": "conditions"
   },
   {
@@ -439,6 +536,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "senses",
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -456,6 +556,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "detection",
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -473,6 +576,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": null,
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -490,6 +596,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": null,
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -507,6 +616,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": null,
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -524,6 +636,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": null,
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -541,6 +656,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": null,
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -558,6 +676,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": null,
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -575,6 +696,11 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": null,
+    "duration": "unlimited",
+    "overrides": [
+      "grabbed"
+    ],
     "pack": "conditions"
   },
   {
@@ -592,6 +718,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": null,
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -609,6 +738,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": null,
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -626,6 +758,11 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": null,
+    "duration": "unlimited",
+    "overrides": [
+      "slowed"
+    ],
     "pack": "conditions"
   },
   {
@@ -643,6 +780,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "abilities",
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -660,6 +800,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "death",
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -677,6 +820,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "detection",
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -694,6 +840,14 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "attitudes",
+    "duration": "unlimited",
+    "overrides": [
+      "helpful",
+      "friendly",
+      "indifferent",
+      "hostile"
+    ],
     "pack": "conditions"
   },
   {
@@ -711,6 +865,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "detection",
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   },
   {
@@ -728,6 +885,9 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "group": "death",
+    "duration": "unlimited",
+    "overrides": [],
     "pack": "conditions"
   }
 ]

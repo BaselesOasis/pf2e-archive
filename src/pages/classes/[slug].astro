@@ -1,0 +1,104 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import classes from '../../data/classes.json';
+
+const saveMap = { 0: 'Trained', 1: 'Expert', 2: 'Master', 3: 'Legendary' };
+
+export async function getStaticPaths() {
+  return classes.map(cls => ({
+    params: { slug: cls.slug },
+    props: { cls }
+  }));
+}
+
+const { cls } = Astro.props;
+---
+
+<BaseLayout title={cls.name} description={cls.description.substring(0, 160).replace(/<[^>]*>/g, '')}>
+  <article>
+    <header>
+      <h1>{cls.name}</h1>
+      {cls.traits.length > 0 && (
+        <p>
+          {cls.traits.map(trait => (
+            <small><mark>{trait}</mark></small>
+          ))}
+        </p>
+      )}
+    </header>
+
+    <table>
+      <tbody>
+        <tr><th>HP per Level</th><td>{cls.hp ?? '—'}</td></tr>
+        <tr><th>Key Ability</th><td>{cls.keyAbility?.map(a => a.toUpperCase()).join(' or ') ?? '—'}</td></tr>
+        <tr><th>Perception</th><td>{saveMap[cls.perception] ?? cls.perception}</td></tr>
+      </tbody>
+    </table>
+
+    {cls.savingThrows && (
+      <section>
+        <h2>Saving Throws</h2>
+        <table>
+          <tbody>
+            <tr><th>Fortitude</th><td>{saveMap[cls.savingThrows.fortitude] ?? cls.savingThrows.fortitude}</td></tr>
+            <tr><th>Reflex</th><td>{saveMap[cls.savingThrows.reflex] ?? cls.savingThrows.reflex}</td></tr>
+            <tr><th>Will</th><td>{saveMap[cls.savingThrows.will] ?? cls.savingThrows.will}</td></tr>
+          </tbody>
+        </table>
+      </section>
+    )}
+
+    {cls.attacks && (
+      <section>
+        <h2>Weapon Proficiencies</h2>
+        <table>
+          <tbody>
+            <tr><th>Simple</th><td>{saveMap[cls.attacks.simple] ?? cls.attacks.simple ?? '—'}</td></tr>
+            <tr><th>Martial</th><td>{saveMap[cls.attacks.martial] ?? cls.attacks.martial ?? '—'}</td></tr>
+            <tr><th>Advanced</th><td>{saveMap[cls.attacks.advanced] ?? cls.attacks.advanced ?? '—'}</td></tr>
+            {cls.attacks.other && <tr><th>{cls.attacks.other.name}</th><td>{saveMap[cls.attacks.other.rank] ?? cls.attacks.other.rank}</td></tr>}
+          </tbody>
+        </table>
+      </section>
+    )}
+
+    {cls.defenses && (
+      <section>
+        <h2>Armor Proficiencies</h2>
+        <table>
+          <tbody>
+            <tr><th>Unarmored</th><td>{saveMap[cls.defenses.unarmored] ?? cls.defenses.unarmored ?? '—'}</td></tr>
+            <tr><th>Light</th><td>{saveMap[cls.defenses.light] ?? cls.defenses.light ?? '—'}</td></tr>
+            <tr><th>Medium</th><td>{saveMap[cls.defenses.medium] ?? cls.defenses.medium ?? '—'}</td></tr>
+            <tr><th>Heavy</th><td>{saveMap[cls.defenses.heavy] ?? cls.defenses.heavy ?? '—'}</td></tr>
+          </tbody>
+        </table>
+      </section>
+    )}
+
+    {cls.trainedSkills && (
+      <section>
+        <h2>Trained Skills</h2>
+        <p>
+          {cls.trainedSkills.value?.join(', ') || '—'}
+          {cls.trainedSkills.additional && ` (+${cls.trainedSkills.additional} additional)`}
+        </p>
+        {cls.trainedSkills.lore && (
+          <p><strong>Lore:</strong> {cls.trainedSkills.lore.join(', ')}</p>
+        )}
+      </section>
+    )}
+
+    <h2>Description</h2>
+    <div set:html={cls.description} />
+
+    {cls.publication && (
+      <footer>
+        <small>Source: {cls.publication.title} ({cls.publication.license})</small>
+      </footer>
+    )}
+
+    <hr />
+    <p><a href="/classes">← Back to Classes</a></p>
+  </article>
+</BaseLayout>

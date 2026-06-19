@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import backgrounds from '../../data/backgrounds.json';
+
+const abilityMap = {
+  str: 'Strength', dex: 'Dexterity', con: 'Constitution',
+  int: 'Intelligence', wis: 'Wisdom', cha: 'Charisma'
+};
+
+export async function getStaticPaths() {
+  return backgrounds.map(bg => ({
+    params: { slug: bg.slug },
+    props: { bg }
+  }));
+}
+
+const { bg } = Astro.props;
+---
+
+<BaseLayout title={bg.name} description={bg.description.substring(0, 160).replace(/<[^>]*>/g, '')}>
+  <article>
+    <header>
+      <h1>{bg.name}</h1>
+      <p>
+        <small>
+          {bg.rarity !== 'common' && <mark>{bg.rarity}</mark>}
+          {bg.rarity !== 'common' && ' · '}
+          Background
+        </small>
+      </p>
+    </header>
+
+    {bg.boosts.length > 0 && (
+      <section>
+        <h2>Ability Boosts</h2>
+        <ul>
+          {bg.boosts.map(boost => (
+            <li>
+              <strong>Boost {boost.slot + 1}:</strong>{' '}
+              {boost.options.map(ab => abilityMap[ab] || ab).join(' or ')}
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {bg.trainedSkills && (
+      <section>
+        <h2>Trained Skills</h2>
+        <p>
+          {bg.trainedSkills.value?.join(', ') || '—'}
+          {bg.trainedSkills.additional && ` (+${bg.trainedSkills.additional} additional)`}
+        </p>
+        {bg.trainedSkills.lore && (
+          <p><strong>Lore:</strong> {bg.trainedSkills.lore.join(', ')}</p>
+        )}
+      </section>
+    )}
+
+    <h2>Description</h2>
+    <div set:html={bg.description} />
+
+    {bg.publication && (
+      <footer>
+        <small>Source: {bg.publication.title} ({bg.publication.license})</small>
+      </footer>
+    )}
+
+    <hr />
+    <p><a href="/backgrounds">← Back to Backgrounds</a></p>
+  </article>
+</BaseLayout>

@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import equipment from '../../data/equipment.json';
+
+export async function getStaticPaths() {
+  return equipment.map(item => ({
+    params: { slug: item.slug },
+    props: { item }
+  }));
+}
+
+const { item } = Astro.props;
+---
+
+<BaseLayout title={item.name} description={item.description.substring(0, 160).replace(/<[^>]*>/g, '')}>
+  <article>
+    <header>
+      <h1>{item.name}</h1>
+      <p>
+        <small>
+          {item.rarity !== 'common' && <mark>{item.rarity}</mark>}
+          {item.rarity !== 'common' && ' · '}
+          {item.subType}
+          {item.level !== null && ` · Level ${item.level}`}
+        </small>
+      </p>
+    </header>
+
+    {item.traits.length > 0 && (
+      <p>
+        {item.traits.map(trait => (
+          <small><mark>{trait}</mark></small>
+        ))}
+      </p>
+    )}
+
+    <table>
+      <tbody>
+        <tr><th>Price</th><td>{item.price}</td></tr>
+        <tr><th>Bulk</th><td>{item.bulk ?? '—'}</td></tr>
+        <tr><th>Size</th><td>{item.size ?? '—'}</td></tr>
+        {item.hardness !== null && <tr><th>Hardness</th><td>{item.hardness}</td></tr>}
+        {item.hp !== null && <tr><th>HP</th><td>{item.hp}</td></tr>}
+      </tbody>
+    </table>
+
+    <h2>Description</h2>
+    <div set:html={item.description} />
+
+    {item.publication && (
+      <footer>
+        <small>Source: {item.publication.title} ({item.publication.license})</small>
+      </footer>
+    )}
+
+    <hr />
+    <p><a href="/equipment">← Back to Equipment</a></p>
+  </article>
+</BaseLayout>

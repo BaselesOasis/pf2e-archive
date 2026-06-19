@@ -50,6 +50,33 @@ function slugify(name) {
     .replace(/^-+|-+$/g, '');
 }
 
+// Hilfsfunktion: Preis formatieren
+function formatPrice(priceObj) {
+  if (!priceObj) return '—';
+  const parts = [];
+  if (priceObj.pp) parts.push(`${priceObj.pp} pp`);
+  if (priceObj.gp) parts.push(`${priceObj.gp} gp`);
+  if (priceObj.sp) parts.push(`${priceObj.sp} sp`);
+  if (priceObj.cp) parts.push(`${priceObj.cp} cp`);
+  return parts.length > 0 ? parts.join(', ') : '—';
+}
+
+// Hilfsfunktion: Ability-Boosts formatieren
+function formatBoosts(boosts) {
+  if (!boosts) return [];
+  const result = [];
+  for (const key of Object.keys(boosts)) {
+    const boost = boosts[key];
+    if (boost.value && boost.value.length > 0) {
+      result.push({
+        slot: parseInt(key),
+        options: boost.value
+      });
+    }
+  }
+  return result;
+}
+
 // Hilfsfunktion: Eintragsdaten bereinigen und normalisieren
 function sanitizeEntry(entry, packType) {
   const base = {
@@ -65,7 +92,7 @@ function sanitizeEntry(entry, packType) {
     publication: entry.system?.publication || null,
   };
 
-  // Typspezifische Felder
+  // Spells
   if (packType === 'spell') {
     base.castTime = entry.system?.time?.value || null;
     base.range = entry.system?.range?.value || null;
@@ -77,10 +104,59 @@ function sanitizeEntry(entry, packType) {
     base.damage = entry.system?.damage || {};
   }
 
+  // Feats
   if (packType === 'feat') {
     base.category = entry.system?.category || null;
     base.actionType = entry.system?.actionType?.value || 'passive';
     base.prerequisites = entry.system?.prerequisites?.value || [];
+  }
+
+  // Equipment
+  if (packType === 'equipment') {
+    base.subType = entry.type || null;
+    base.bulk = entry.system?.bulk?.value ?? null;
+    base.price = formatPrice(entry.system?.price?.value);
+    base.size = entry.system?.size || null;
+    base.hardness = entry.system?.hardness ?? null;
+    base.hp = entry.system?.hp?.max ?? null;
+    base.baseItem = entry.system?.baseItem || null;
+  }
+
+  // Ancestries
+  if (packType === 'ancestry') {
+    base.hp = entry.system?.hp ?? null;
+    base.size = entry.system?.size || null;
+    base.speed = entry.system?.speed ?? null;
+    base.vision = entry.system?.vision || 'normal';
+    base.boosts = formatBoosts(entry.system?.boosts);
+    base.flaws = formatBoosts(entry.system?.flaws);
+    base.languages = entry.system?.languages?.value || [];
+    base.additionalLanguages = entry.system?.additionalLanguages?.value || [];
+  }
+
+  // Classes
+  if (packType === 'class') {
+    base.hp = entry.system?.hp ?? null;
+    base.keyAbility = entry.system?.keyAbility?.value || [];
+    base.savingThrows = entry.system?.savingThrows || {};
+    base.defenses = entry.system?.defenses || {};
+    base.attacks = entry.system?.attacks || {};
+    base.perception = entry.system?.perception ?? null;
+    base.trainedSkills = entry.system?.trainedSkills || {};
+    base.spellcasting = entry.system?.spellcasting ?? 0;
+  }
+
+  // Backgrounds
+  if (packType === 'background') {
+    base.boosts = formatBoosts(entry.system?.boosts);
+    base.trainedSkills = entry.system?.trainedSkills || {};
+  }
+
+  // Conditions
+  if (packType === 'condition') {
+    base.group = entry.system?.group || null;
+    base.duration = entry.system?.duration?.unit || 'unlimited';
+    base.overrides = entry.system?.overrides || [];
   }
 
   return base;
@@ -88,6 +164,11 @@ function sanitizeEntry(entry, packType) {
 
 // Hauptlogik
 const allEntries = [];
+
+// Sicherstellen, dass der Output-Ordner existiert
+if (!fs.existsSync(OUTPUT_DIR)){
+    fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+}
 
 for (const pack of PACKS) {
   const sourcePath = path.join(PF2E_DIR, pack.source);

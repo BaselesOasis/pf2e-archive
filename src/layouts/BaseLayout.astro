@@ -19,7 +19,7 @@ const { title, description = 'PF2e Reference Archive' } = Astro.props;
     <meta name="description" content={description} />
   </head>
   <body>
-    <header>
+    <header class="container">
       <nav>
         <ul>
           <li><a href="/"><strong>PF2e Archive</strong></a></li>
@@ -28,6 +28,10 @@ const { title, description = 'PF2e Reference Archive' } = Astro.props;
           <li><a href="/spells">Spells</a></li>
           <li><a href="/feats">Feats</a></li>
           <li><a href="/equipment">Equipment</a></li>
+          <li><a href="/ancestries">Ancestries</a></li>
+          <li><a href="/classes">Classes</a></li>
+          <li><a href="/backgrounds">Backgrounds</a></li>
+          <li><a href="/conditions">Conditions</a></li>
           <li><a href="/search">Search</a></li>
         </ul>
       </nav>
@@ -36,5 +40,12 @@ const { title, description = 'PF2e Reference Archive' } = Astro.props;
     <main class="container">
       <slot />
     </main>
+
+    <footer class="container">
+      <small>
+        Built with Astro, Pico CSS, and Pagefind. Data from the
+        <a href="https://github.com/foundryvtt/pf2e" target="_blank" rel="noopener">Foundry VTT PF2e system</a>.
+      </small>
+    </footer>
   </body>
 </html>

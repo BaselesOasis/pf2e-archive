@@ -17,6 +17,55 @@
       "remaster": false,
       "title": "Pathfinder Lost Omens The Mwangi Expanse"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 25,
+    "vision": "normal",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "dex"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "wis"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "con"
+        ]
+      }
+    ],
+    "languages": [
+      "anadi",
+      "mwangi"
+    ],
+    "additionalLanguages": [
+      "draconic",
+      "elven",
+      "fey",
+      "iruxi",
+      "kholo",
+      "orcish"
+    ],
     "pack": "ancestries"
   },
   {
@@ -37,6 +86,55 @@
       "remaster": false,
       "title": "Pathfinder Lost Omens Ancestry Guide"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 25,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "dex"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "int"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "cha"
+        ]
+      }
+    ],
+    "languages": [
+      "androffan",
+      "common"
+    ],
+    "additionalLanguages": [
+      "chthonian",
+      "draconic",
+      "dwarven",
+      "empyrean",
+      "sakvroth",
+      "utopian"
+    ],
     "pack": "ancestries"
   },
   {
@@ -58,6 +156,53 @@
       "remaster": true,
       "title": "Pathfinder Howl of the Wild"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 20,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "str"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "wis"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "int"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "thalassic"
+    ],
+    "additionalLanguages": [
+      "alghollthu",
+      "azlanti",
+      "fey",
+      "tien"
+    ],
     "pack": "ancestries"
   },
   {
@@ -78,6 +223,46 @@
       "remaster": true,
       "title": "Pathfinder Guns & Gears"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 25,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "str"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [],
+    "languages": [
+      "common",
+      "utopian"
+    ],
+    "additionalLanguages": [
+      "chthonian",
+      "diabolic",
+      "dwarven",
+      "elven",
+      "empyrean",
+      "jistkan",
+      "petran",
+      "pyric",
+      "sussuran",
+      "thalassic"
+    ],
     "pack": "ancestries"
   },
   {
@@ -98,6 +283,47 @@
       "remaster": true,
       "title": "Pathfinder Howl of the Wild"
     },
+    "hp": 6,
+    "size": "med",
+    "speed": 5,
+    "vision": "normal",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "con"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "wis"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "int"
+        ]
+      }
+    ],
+    "languages": [
+      "common"
+    ],
+    "additionalLanguages": [],
     "pack": "ancestries"
   },
   {
@@ -119,6 +345,55 @@
       "remaster": false,
       "title": "Pathfinder Lost Omens Absalom, City of Lost Omens"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 20,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "cha"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "con"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "wis"
+        ]
+      }
+    ],
+    "languages": [
+      "alghollthu",
+      "common"
+    ],
+    "additionalLanguages": [
+      "aklo",
+      "azlanti",
+      "draconic",
+      "elven",
+      "thalassic",
+      "sakvroth"
+    ],
     "pack": "ancestries"
   },
   {
@@ -139,6 +414,57 @@
       "remaster": true,
       "title": "Pathfinder Player Core 2"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 25,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "cha"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "dex"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "wis"
+        ]
+      }
+    ],
+    "languages": [
+      "amurrun",
+      "common"
+    ],
+    "additionalLanguages": [
+      "draconic",
+      "elven",
+      "fey",
+      "gnomish",
+      "goblin",
+      "halfling",
+      "iruxi",
+      "jotun"
+    ],
     "pack": "ancestries"
   },
   {
@@ -160,6 +486,56 @@
       "remaster": true,
       "title": "Pathfinder Howl of the Wild"
     },
+    "hp": 8,
+    "size": "lg",
+    "speed": 30,
+    "vision": "darkvision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "str"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "wis"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "cha"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "fey"
+    ],
+    "additionalLanguages": [
+      "arboreal",
+      "cyclops",
+      "dwarven",
+      "elven",
+      "gnomish",
+      "halfling",
+      "jotun"
+    ],
     "pack": "ancestries"
   },
   {
@@ -181,6 +557,55 @@
       "remaster": false,
       "title": "Pathfinder Lost Omens The Mwangi Expanse"
     },
+    "hp": 10,
+    "size": "med",
+    "speed": 25,
+    "vision": "normal",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "con"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "wis"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "cha"
+        ]
+      }
+    ],
+    "languages": [
+      "mwangi",
+      "rasu"
+    ],
+    "additionalLanguages": [
+      "elven",
+      "empyrean",
+      "fey",
+      "iruxi",
+      "petran",
+      "utopian"
+    ],
     "pack": "ancestries"
   },
   {
@@ -200,6 +625,48 @@
       "remaster": true,
       "title": "Pathfinder Lost Omens Draconic Codex"
     },
+    "hp": 8,
+    "size": "tiny",
+    "speed": 20,
+    "vision": "darkvision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "dex"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "cha"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "con"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "draconic"
+    ],
+    "additionalLanguages": [],
     "pack": "ancestries"
   },
   {
@@ -220,6 +687,55 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "hp": 10,
+    "size": "med",
+    "speed": 20,
+    "vision": "darkvision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "con"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "wis"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "cha"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "dwarven"
+    ],
+    "additionalLanguages": [
+      "gnomish",
+      "goblin",
+      "jotun",
+      "orcish",
+      "petran",
+      "sakvroth"
+    ],
     "pack": "ancestries"
   },
   {
@@ -240,6 +756,56 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "hp": 6,
+    "size": "med",
+    "speed": 30,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "dex"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "int"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "con"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "elven"
+    ],
+    "additionalLanguages": [
+      "draconic",
+      "empyrean",
+      "fey",
+      "gnomish",
+      "goblin",
+      "kholo",
+      "orcish"
+    ],
     "pack": "ancestries"
   },
   {
@@ -260,6 +826,41 @@
       "remaster": false,
       "title": "Pathfinder Lost Omens Ancestry Guide"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 25,
+    "vision": "darkvision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "dex"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [],
+    "languages": [
+      "common",
+      "shadowtongue"
+    ],
+    "additionalLanguages": [
+      "aklo",
+      "draconic",
+      "dziriak",
+      "necril",
+      "sakvroth"
+    ],
     "pack": "ancestries"
   },
   {
@@ -280,6 +881,41 @@
       "remaster": false,
       "title": "Pathfinder Lost Omens Ancestry Guide"
     },
+    "hp": 10,
+    "size": "med",
+    "speed": 25,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "con"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [],
+    "languages": [
+      "common"
+    ],
+    "additionalLanguages": [
+      "aklo",
+      "draconic",
+      "dwarven",
+      "elven",
+      "goblin",
+      "sakvroth"
+    ],
     "pack": "ancestries"
   },
   {
@@ -301,6 +937,41 @@
       "remaster": false,
       "title": "Pathfinder Lost Omens Impossible Lands"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 25,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "con"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [],
+    "languages": [
+      "common",
+      "fey"
+    ],
+    "additionalLanguages": [
+      "aklo",
+      "draconic",
+      "elven",
+      "gnomish",
+      "jotun"
+    ],
     "pack": "ancestries"
   },
   {
@@ -321,6 +992,56 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "hp": 8,
+    "size": "sm",
+    "speed": 25,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "cha"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "con"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "str"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "fey",
+      "gnomish"
+    ],
+    "additionalLanguages": [
+      "draconic",
+      "dwarven",
+      "elven",
+      "goblin",
+      "jotun",
+      "orcish"
+    ],
     "pack": "ancestries"
   },
   {
@@ -341,6 +1062,55 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "hp": 6,
+    "size": "sm",
+    "speed": 25,
+    "vision": "darkvision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "cha"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "dex"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "wis"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "goblin"
+    ],
+    "additionalLanguages": [
+      "draconic",
+      "dwarven",
+      "gnomish",
+      "halfling",
+      "kholo",
+      "orcish"
+    ],
     "pack": "ancestries"
   },
   {
@@ -361,6 +1131,44 @@
       "remaster": false,
       "title": "Pathfinder Lost Omens The Mwangi Expanse"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 30,
+    "vision": "normal",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "wis"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [],
+    "languages": [
+      "goloma",
+      "mwangi"
+    ],
+    "additionalLanguages": [
+      "aklo",
+      "chthonian",
+      "draconic",
+      "elven",
+      "fey",
+      "halfling",
+      "necril",
+      "orcish"
+    ],
     "pack": "ancestries"
   },
   {
@@ -381,6 +1189,53 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "hp": 6,
+    "size": "sm",
+    "speed": 25,
+    "vision": "normal",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "dex"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "wis"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "str"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "halfling"
+    ],
+    "additionalLanguages": [
+      "dwarven",
+      "elven",
+      "gnomish",
+      "goblin"
+    ],
     "pack": "ancestries"
   },
   {
@@ -401,6 +1256,55 @@
       "remaster": true,
       "title": "Pathfinder Player Core 2"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 25,
+    "vision": "darkvision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "con"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "int"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "wis"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "goblin"
+    ],
+    "additionalLanguages": [
+      "draconic",
+      "dwarven",
+      "halfling",
+      "jotun",
+      "kholo",
+      "orcish"
+    ],
     "pack": "ancestries"
   },
   {
@@ -421,6 +1325,39 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 25,
+    "vision": "normal",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "cha",
+          "con",
+          "dex",
+          "int",
+          "str",
+          "wis"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [],
+    "languages": [
+      "common"
+    ],
+    "additionalLanguages": [],
     "pack": "ancestries"
   },
   {
@@ -442,6 +1379,56 @@
       "remaster": true,
       "title": "Pathfinder Battlecry!"
     },
+    "hp": 10,
+    "size": "lg",
+    "speed": 25,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "str"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "wis"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "cha"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "jotun"
+    ],
+    "additionalLanguages": [
+      "cyclops",
+      "dwarven",
+      "empyrean",
+      "fey",
+      "orcish",
+      "petran",
+      "shadowtongue"
+    ],
     "pack": "ancestries"
   },
   {
@@ -462,6 +1449,40 @@
       "remaster": false,
       "title": "Pathfinder Lost Omens Impossible Lands"
     },
+    "hp": 8,
+    "size": "sm",
+    "speed": 25,
+    "vision": "normal",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "con"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [],
+    "languages": [
+      "common"
+    ],
+    "additionalLanguages": [
+      "draconic",
+      "empyrean",
+      "fey",
+      "petran",
+      "thalassic"
+    ],
     "pack": "ancestries"
   },
   {
@@ -482,6 +1503,55 @@
       "remaster": true,
       "title": "Pathfinder Player Core 2"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 25,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "str"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "int"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "wis"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "kholo"
+    ],
+    "additionalLanguages": [
+      "draconic",
+      "elven",
+      "fey",
+      "iruxi",
+      "necril",
+      "orcish"
+    ],
     "pack": "ancestries"
   },
   {
@@ -502,6 +1572,41 @@
       "remaster": false,
       "title": "Pathfinder Lost Omens Ancestry Guide"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 25,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "cha"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [],
+    "languages": [
+      "common"
+    ],
+    "additionalLanguages": [
+      "dwarven",
+      "elven",
+      "fey",
+      "gnomish",
+      "goblin",
+      "halfling"
+    ],
     "pack": "ancestries"
   },
   {
@@ -522,6 +1627,57 @@
       "remaster": true,
       "title": "Pathfinder Player Core 2"
     },
+    "hp": 6,
+    "size": "sm",
+    "speed": 25,
+    "vision": "darkvision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "cha"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "dex"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "con"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "sakvroth"
+    ],
+    "additionalLanguages": [
+      "aklo",
+      "diabolic",
+      "draconic",
+      "dwarven",
+      "empyrean",
+      "fey",
+      "gnomish",
+      "petran"
+    ],
     "pack": "ancestries"
   },
   {
@@ -542,6 +1698,55 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "hp": 8,
+    "size": "sm",
+    "speed": 25,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "con"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "wis"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "int"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "fey"
+    ],
+    "additionalLanguages": [
+      "draconic",
+      "elven",
+      "gnomish",
+      "goblin",
+      "halfling",
+      "sakvroth"
+    ],
     "pack": "ancestries"
   },
   {
@@ -562,6 +1767,56 @@
       "remaster": true,
       "title": "Pathfinder Player Core 2"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 25,
+    "vision": "normal",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "str"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "wis"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "int"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "iruxi"
+    ],
+    "additionalLanguages": [
+      "amurrun",
+      "boggard",
+      "draconic",
+      "elven",
+      "fey",
+      "jotun",
+      "thalassic"
+    ],
     "pack": "ancestries"
   },
   {
@@ -583,6 +1838,54 @@
       "remaster": true,
       "title": "Pathfinder Howl of the Wild"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 5,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "dex"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "cha"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "con"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "thalassic"
+    ],
+    "additionalLanguages": [
+      "aklo",
+      "azlanti",
+      "draconic",
+      "elven",
+      "fey"
+    ],
     "pack": "ancestries"
   },
   {
@@ -604,6 +1907,54 @@
       "remaster": true,
       "title": "Pathfinder Howl of the Wild"
     },
+    "hp": 10,
+    "size": "lg",
+    "speed": 25,
+    "vision": "darkvision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "str"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "con"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "cha"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "jotun"
+    ],
+    "additionalLanguages": [
+      "cyclops",
+      "dwarven",
+      "fey",
+      "petran",
+      "sakvroth"
+    ],
     "pack": "ancestries"
   },
   {
@@ -624,6 +1975,45 @@
       "remaster": false,
       "title": "Pathfinder Lost Omens Impossible Lands"
     },
+    "hp": 10,
+    "size": "med",
+    "speed": 25,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "str"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [],
+    "languages": [
+      "common",
+      "nagaji"
+    ],
+    "additionalLanguages": [
+      "aklo",
+      "amurrun",
+      "draconic",
+      "empyrean",
+      "shadowtongue",
+      "tengu",
+      "thalassic",
+      "sakvroth",
+      "vanara"
+    ],
     "pack": "ancestries"
   },
   {
@@ -644,6 +2034,45 @@
       "remaster": true,
       "title": "Pathfinder Player Core"
     },
+    "hp": 10,
+    "size": "med",
+    "speed": 25,
+    "vision": "darkvision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "cha",
+          "con",
+          "dex",
+          "int",
+          "str",
+          "wis"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "cha",
+          "con",
+          "dex",
+          "int",
+          "str",
+          "wis"
+        ]
+      }
+    ],
+    "flaws": [],
+    "languages": [
+      "common",
+      "orcish"
+    ],
+    "additionalLanguages": [
+      "goblin",
+      "jotun",
+      "petran",
+      "sakvroth"
+    ],
     "pack": "ancestries"
   },
   {
@@ -664,6 +2093,54 @@
       "remaster": false,
       "title": "Pathfinder Lost Omens The Grand Bazaar"
     },
+    "hp": 6,
+    "size": "sm",
+    "speed": 25,
+    "vision": "darkvision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "con"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "cha"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "dex"
+        ]
+      }
+    ],
+    "languages": [
+      "common"
+    ],
+    "additionalLanguages": [
+      "draconic",
+      "dwarven",
+      "elven",
+      "fey",
+      "gnomish",
+      "goblin"
+    ],
     "pack": "ancestries"
   },
   {
@@ -684,6 +2161,58 @@
       "remaster": true,
       "title": "Pathfinder Player Core 2"
     },
+    "hp": 6,
+    "size": "sm",
+    "speed": 25,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "dex"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "int"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "str"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "ysoki"
+    ],
+    "additionalLanguages": [
+      "aklo",
+      "draconic",
+      "dwarven",
+      "gnomish",
+      "goblin",
+      "halfling",
+      "kholo",
+      "orcish",
+      "sakvroth"
+    ],
     "pack": "ancestries"
   },
   {
@@ -704,6 +2233,58 @@
       "remaster": true,
       "title": "Pathfinder Lost Omens Tian Xia Character Guide"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 25,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "con"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "wis"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "cha"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "samsaran"
+    ],
+    "additionalLanguages": [
+      "chthonian",
+      "empyrean",
+      "jotun",
+      "petran",
+      "pyric",
+      "sussuran",
+      "thalassic",
+      "diabolic",
+      "draconic"
+    ],
     "pack": "ancestries"
   },
   {
@@ -724,6 +2305,56 @@
       "remaster": true,
       "title": "Pathfinder Lost Omens Tian Xia Character Guide"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 25,
+    "vision": "normal",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "str"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "cha"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "wis"
+        ]
+      }
+    ],
+    "languages": [
+      "common"
+    ],
+    "additionalLanguages": [
+      "empyrean",
+      "fey",
+      "nagaji",
+      "petran",
+      "pyric",
+      "sussuran",
+      "thalassic",
+      "yaksha"
+    ],
     "pack": "ancestries"
   },
   {
@@ -744,6 +2375,47 @@
       "remaster": false,
       "title": "Pathfinder Lost Omens The Mwangi Expanse"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 25,
+    "vision": "darkvision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "int"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [],
+    "languages": [
+      "mwangi",
+      "shisk"
+    ],
+    "additionalLanguages": [
+      "common",
+      "draconic",
+      "dwarven",
+      "elven",
+      "fey",
+      "gnomish",
+      "goblin",
+      "halfling",
+      "jotun",
+      "orcish",
+      "sakvroth"
+    ],
     "pack": "ancestries"
   },
   {
@@ -764,6 +2436,54 @@
       "remaster": false,
       "title": "Pathfinder #153: Life's Long Shadows"
     },
+    "hp": 6,
+    "size": "sm",
+    "speed": 25,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "cha"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "dex"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "con"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "shoony"
+    ],
+    "additionalLanguages": [
+      "dwarven",
+      "gnomish",
+      "goblin",
+      "halfling",
+      "petran"
+    ],
     "pack": "ancestries"
   },
   {
@@ -784,6 +2504,48 @@
       "remaster": false,
       "title": "Pathfinder Book of the Dead"
     },
+    "hp": 6,
+    "size": "med",
+    "speed": 25,
+    "vision": "normal",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "dex"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "cha"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "int"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "necril"
+    ],
+    "additionalLanguages": [],
     "pack": "ancestries"
   },
   {
@@ -804,6 +2566,55 @@
       "remaster": false,
       "title": "Pathfinder Lost Omens Ancestry Guide"
     },
+    "hp": 6,
+    "size": "tiny",
+    "speed": 20,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "dex"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "int"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "str"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "fey"
+    ],
+    "additionalLanguages": [
+      "draconic",
+      "elven",
+      "empyrean",
+      "gnomish",
+      "goblin",
+      "jotun"
+    ],
     "pack": "ancestries"
   },
   {
@@ -824,6 +2635,40 @@
       "remaster": false,
       "title": "Pathfinder Lost Omens Ancestry Guide"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 25,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "dex"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [],
+    "languages": [
+      "common",
+      "strix"
+    ],
+    "additionalLanguages": [
+      "diabolic",
+      "draconic",
+      "gnomish",
+      "jotun"
+    ],
     "pack": "ancestries"
   },
   {
@@ -844,6 +2689,39 @@
       "remaster": true,
       "title": "Pathfinder Howl of the Wild"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 25,
+    "vision": "darkvision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "con"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [],
+    "languages": [
+      "common",
+      "surki"
+    ],
+    "additionalLanguages": [
+      "elven",
+      "fey",
+      "sakvroth"
+    ],
     "pack": "ancestries"
   },
   {
@@ -864,6 +2742,55 @@
       "remaster": true,
       "title": "Pathfinder Lost Omens Tian Xia Character Guide"
     },
+    "hp": 10,
+    "size": "sm",
+    "speed": 25,
+    "vision": "normal",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "con"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "cha"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "wis"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "tanuki"
+    ],
+    "additionalLanguages": [
+      "elven",
+      "fey",
+      "gnomish",
+      "goblin",
+      "kitsune",
+      "tengu"
+    ],
     "pack": "ancestries"
   },
   {
@@ -884,6 +2811,42 @@
       "remaster": true,
       "title": "Pathfinder Player Core 2"
     },
+    "hp": 6,
+    "size": "med",
+    "speed": 25,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "dex"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [],
+    "languages": [
+      "common",
+      "tengu"
+    ],
+    "additionalLanguages": [
+      "dwarven",
+      "elven",
+      "fey",
+      "gnomish",
+      "goblin",
+      "halfling"
+    ],
     "pack": "ancestries"
   },
   {
@@ -904,6 +2867,56 @@
       "remaster": true,
       "title": "Pathfinder Player Core 2"
     },
+    "hp": 6,
+    "size": "sm",
+    "speed": 25,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "dex"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "wis"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "str"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "tripkee"
+    ],
+    "additionalLanguages": [
+      "boggard",
+      "chthonian",
+      "draconic",
+      "elven",
+      "fey",
+      "iruxi",
+      "thalassic"
+    ],
     "pack": "ancestries"
   },
   {
@@ -924,6 +2937,41 @@
       "remaster": false,
       "title": "Pathfinder Lost Omens Impossible Lands"
     },
+    "hp": 6,
+    "size": "med",
+    "speed": 25,
+    "vision": "normal",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "dex"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [],
+    "languages": [
+      "common",
+      "vanara"
+    ],
+    "additionalLanguages": [
+      "diabolic",
+      "elven",
+      "fey",
+      "gnomish",
+      "goblin"
+    ],
     "pack": "ancestries"
   },
   {
@@ -944,6 +2992,43 @@
       "remaster": false,
       "title": "Pathfinder Lost Omens Impossible Lands"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 25,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "dex"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [],
+    "languages": [
+      "common",
+      "vishkanyan"
+    ],
+    "additionalLanguages": [
+      "aklo",
+      "draconic",
+      "elven",
+      "goblin",
+      "thalassic",
+      "sakvroth",
+      "vanara"
+    ],
     "pack": "ancestries"
   },
   {
@@ -965,6 +3050,57 @@
       "remaster": true,
       "title": "Pathfinder Lost Omens Tian Xia Character Guide"
     },
+    "hp": 8,
+    "size": "sm",
+    "speed": 25,
+    "vision": "darkvision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "dex"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "cha"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "con"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "shadowtongue",
+      "wayang"
+    ],
+    "additionalLanguages": [
+      "dziriak",
+      "diabolic",
+      "minaten",
+      "nagaji",
+      "thalassic",
+      "vudrani",
+      "yaksha"
+    ],
     "pack": "ancestries"
   },
   {
@@ -985,6 +3121,56 @@
       "remaster": true,
       "title": "Pathfinder Lost Omens Tian Xia Character Guide"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 25,
+    "vision": "low-light-vision",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "con"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "cha"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "int"
+        ]
+      }
+    ],
+    "languages": [
+      "common",
+      "fey",
+      "yaksha"
+    ],
+    "additionalLanguages": [
+      "diabolic",
+      "empyrean",
+      "nagaji",
+      "tang",
+      "tengu",
+      "vudrani"
+    ],
     "pack": "ancestries"
   },
   {
@@ -1005,6 +3191,57 @@
       "remaster": true,
       "title": "Pathfinder Lost Omens Tian Xia Character Guide"
     },
+    "hp": 8,
+    "size": "med",
+    "speed": 25,
+    "vision": "normal",
+    "boosts": [
+      {
+        "slot": 0,
+        "options": [
+          "cha"
+        ]
+      },
+      {
+        "slot": 1,
+        "options": [
+          "con"
+        ]
+      },
+      {
+        "slot": 2,
+        "options": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    ],
+    "flaws": [
+      {
+        "slot": 0,
+        "options": [
+          "int"
+        ]
+      }
+    ],
+    "languages": [
+      "common"
+    ],
+    "additionalLanguages": [
+      "aklo",
+      "draconic",
+      "elven",
+      "fey",
+      "kitsune",
+      "nagaji",
+      "sakvroth",
+      "tengu",
+      "ysoki"
+    ],
     "pack": "ancestries"
   }
 ]
