@@ -1,5 +1,6 @@
 ---
 import '@picocss/pico/css/pico.min.css';
+import PagefindConfig from 'astro-pagefind/components/PagefindConfig.astro';
 
 interface Props {
   title: string;
@@ -19,6 +20,8 @@ const { title, description = 'PF2e Reference Archive' } = Astro.props;
     <meta name="description" content={description} />
   </head>
   <body>
+    <PagefindConfig />
+
     <header class="container">
       <nav>
         <ul>
@@ -32,9 +35,11 @@ const { title, description = 'PF2e Reference Archive' } = Astro.props;
           <li><a href="/classes">Classes</a></li>
           <li><a href="/backgrounds">Backgrounds</a></li>
           <li><a href="/conditions">Conditions</a></li>
-          <li><a href="/search">Search</a></li>
         </ul>
       </nav>
+      <div class="search-bar">
+        <pagefind-searchbox></pagefind-searchbox>
+      </div>
     </header>
 
     <main class="container">
@@ -47,5 +52,45 @@ const { title, description = 'PF2e Reference Archive' } = Astro.props;
         <a href="https://github.com/foundryvtt/pf2e" target="_blank" rel="noopener">Foundry VTT PF2e system</a>.
       </small>
     </footer>
+
+    <style>
+      .search-bar {
+        margin: 0.5rem 0 1rem 0;
+      }
+      .search-bar :global(.pagefind-ui__search-input) {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+      }
+      .search-bar :global(.pagefind-ui__drawer) {
+        position: absolute;
+        z-index: 1000;
+        width: 90%;
+        max-width: 600px;
+        background: var(--pico-background-color);
+        border: 1px solid var(--pico-muted-border-color);
+        border-radius: var(--pico-border-radius);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      }
+      .search-bar :global(.pagefind-ui__result) {
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid var(--pico-muted-border-color);
+      }
+      .search-bar :global(.pagefind-ui__result:last-child) {
+        border-bottom: none;
+      }
+      .search-bar :global(.pagefind-ui__result-link) {
+        text-decoration: none;
+      }
+      .search-bar :global(.pagefind-ui__result-title) {
+        font-weight: 600;
+        color: var(--pico-primary);
+      }
+      .search-bar :global(.pagefind-ui__result-excerpt) {
+        color: var(--pico-muted-color);
+        font-size: 0.85rem;
+        margin-top: 0.25rem;
+      }
+    </style>
   </body>
 </html>
